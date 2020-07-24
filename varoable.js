@@ -1,7 +1,7 @@
 // 1.Use strict
 'use strict'
 
-// 2.Variable
+// 2.Variable 
 let globalName='global name';
 {
     let name='ellie';
@@ -113,3 +113,93 @@ console.log(`value: ${text}, type: ${typeof text}`);
 const ellie={name:'ellie' , age:20};
 console.log(`value: ${ellie}`);
 ellie.age=21;
+
+// equality - puzzler
+console.log(0==false);
+console.log(0===false);
+console.log(''==false);
+console.log(''===false);
+console.log(null==undefined);
+console.log(null===undefined);
+
+
+// 8.Conditional operators :if
+// if, else if,else
+const name='ellie';
+if(name==='ellie'){
+    console.log('Welcome, Ellie!');
+}else if(name==='coder'){
+    console.log('You are amazing coder');
+}else{
+    console.log('unkwnon');
+}
+
+// 9.Ternary operator:
+console.log(name==='ellie' ? 'yes': 'no');
+
+// 10.Switch statement
+const browser='IE';
+switch (browser){
+    case 'IE':
+        console.log('go away!');
+        break;
+    case 'Chorm':
+         console.log('love you');
+         break;
+    case 'Firefox':
+         console.log('lobe you!');
+         break;
+    default:
+        console.log('same all!');
+        break;
+}
+
+
+// 11.Loops
+let i=3;
+while (i>0){
+    console.log(`while: ${i}`);
+    i--;
+}
+
+// do while
+do{
+    console.log(`do while: ${i}`);
+    i--;
+}while(i>0);
+
+// for loop
+for(i=3;i>0;i--){
+    console.log(`for: ${i}`);
+}
+
+for(let i=3;i>0;i=i-2){
+    console.log(`inline variable for: ${i}`);
+}
+
+// nested loop
+for(let i=0;i<10;i++){
+    for(let j=0;j<10;j++){
+        console.log(`i: ${i}, j:${j}`);
+    }
+}
+
+// 1.
+for(let i=0;i<11;i++){
+    if(i%2 !==0){
+        continue;
+    }
+    console.log(`q1.${i}`);
+}
+
+// 2.
+for(let i=0;i<11;i++){
+    if(i>8){
+        break;
+    }
+    console.log(`q2.${i}`);
+}
+
+
+
+
