@@ -98,7 +98,7 @@ console.clear();
     console.log(result);
 }
 
-// result should be:'45,66,80,88,90               sort
+// result should be:'45,66,80,88,90'               sort
 {
     const result=students.map(student=>student.score)
     .sort((a,b)=>a-b)
